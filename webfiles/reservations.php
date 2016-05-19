@@ -1,9 +1,7 @@
 <?php 
-if(isset($_POST['submit'])){
-    startdate = $_POST['startdate'] 
-    departuredate = $_POST['departuredate']
+if(isset($_POST['submit'])) {
 
-    echo "<div class='matchSummary'>" . rand(0,10) . " sites available</div>"
+    echo "<div class='matchSummary'>" . rand(0,10) . " sites available</div>";
    
 
     
