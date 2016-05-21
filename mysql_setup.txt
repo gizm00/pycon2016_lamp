@@ -1,0 +1,11 @@
+/etc/init.d/mysql start 
+mysql -u root -p
+Admin2015
+
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('pycon2016');
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+in /etc/mysql/my.cnf
+comment out:  bind-address = 127.0.0.1
