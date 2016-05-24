@@ -1,4 +1,5 @@
-!#/bin/sh
-exec /etc/init/d/apache restart
-exec mysql -u root -pAdmin2015 < mysql_setup.sql
-exec /etc/init.d/mysql 
+#!/bin/sh
+/etc/init.d/mysql start
+mysql -u root -pAdmin2015 < mysql_setup.sql
+/etc/init.d/mysql start
+/etc/init.d/apache2 restart
